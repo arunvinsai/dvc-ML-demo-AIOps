@@ -14,6 +14,11 @@ def create_dir(dir_list):
         print(f"created directory {dir}")
     return None
 
+def save_data(data, data_path, index_status = False):
+    data.to_csv(data_path)
+    print(f"data saved successfully in {data_path}")
+    return None
+
         
 
 
